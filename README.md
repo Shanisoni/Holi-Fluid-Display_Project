@@ -17,7 +17,7 @@ JavaScript serves as the engine driving the interactivity and dynamism of our pr
 
 ## Implementation
 To integrate the Colorful Smoke Effect on Hover into your own projects, follow these steps:
-1. **HTML Integration**: Copy the provided HTML structure into your HTML file, ensuring to link the necessary CSS and JavaScript files.
+1. **HTML Integration**: 
 2. **CSS Styling**: Customize the CSS styles to match your design preferences, experimenting with colors, sizes, and transition effects to achieve the desired aesthetic.
 3. **JavaScript Logic**: Implement the JavaScript functionality to track user input and animate the hover element accordingly. Adjust the code as needed to achieve the desired responsiveness and visual effect.
 4. **Testing and Optimization**: Test the implementation across different browsers and devices to ensure compatibility and responsiveness. Optimize the code for performance and accessibility, considering factors such as page load times and screen reader compatibility.
