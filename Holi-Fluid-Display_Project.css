@@ -1,10 +1,7 @@
 html, body {
-    overflow: hidden;
-    padding: 50px;
-    color: #fff;
-}
-
-body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
     background: url('https://example.com/work-1-.jpeg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -12,67 +9,43 @@ body {
     background-size: cover;
 }
 
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Added to prevent any overflow */
+}
+
 canvas {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: 0.5;
     opacity: 1;
+    display: block; /* Added for proper rendering */
 }
 
-div {
-    position: relative;
-    z-index: 1;
-    font-size: 70px;
-    padding: 0;
-    display: table;
-    margin: auto;
-    letter-spacing: 2px;
-    font-family: 'Great Vibes', cursive;
-}
-
-p {
-    display: table;
-    margin: 20px auto;
-   
-    text-align: center;
-    font-size: 8px;
-    letter-spacing: 2px;
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    z-index: 1;
-    transform: translateX(-50%);
-}
-
-.op{
-    font-weight: 10;
-    font-size: 0.3em;
-    padding-bottom: 3.5rem;
-  
-}
-.po{
-    font-weight: 10;
-    font-size: 0.2em;
-    font-weight: bolder;
-    font-family: Candara,Calibri,Segoe,Segoe UI,Optima,Arial,sans-serif; 
-    color: rgb(12, 201, 201) ;
-}
-
-
-.ml15 {
+h1.ml15 {
     font-weight: 1000;
-    font-size: 10.8em;
+    font-size: 8vw; /* Responsive font size */
     text-align: center;
-    padding-top: rem;
+    padding-top: 1rem;
     font-style: oblique;
     letter-spacing: 0.2em;
-    
-  }
-  
-  .ml15 .word {
-    display: inline-block;
-    line-height: 1em;
-  }
+    color: #fff; /* Set color to white */
+    z-index: 1; /* Ensure text is above canvas */
+    position: relative; /* Add position relative */
+}
+
+p.thanks-regards {
+    text-align: center;
+    font-size: 1.9vw; /* Responsive font size */
+    color: #fff; /* Set color to white */
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1; /* Ensure text is above canvas */
+}
